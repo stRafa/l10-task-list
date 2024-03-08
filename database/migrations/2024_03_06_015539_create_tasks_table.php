@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
 
             $table->string('title');
-            $table->string('description');
-            $table->string('long_description')->nullable();
+            $table->string('description',500);
+            $table->string('long_description', 1000)->nullable();
             $table->string('completed')->default(false);
 
             $table->timestamps();
